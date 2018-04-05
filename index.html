@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <title>Sample Page</title>
   </head>
+  
+  <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-116960636-1', 'auto');
+        ga('send', 'pageview');
+  </script>
+  
   <style>
   .input {
     display:block;
@@ -35,15 +46,15 @@
     <div class="wrapper">
       <button id="button" type="button" name="button">Sample Button</button>
     </div>
-      <script>
-        var link = window.document.getElementById('link')
-        link.textContent = 'Modified text'
-        var listener = function (event) {
-          event.preventDefault()
-          var output = window.document.getElementById('link')
-          output.textContent = 'I was clicked'
-        }
-        link.addEventListener('click', listener)
-      </script>
+<!--       <script> -->
+//         var link = window.document.getElementById('link')
+//         link.textContent = 'Modified text'
+//         var listener = function (event) {
+//           event.preventDefault()
+//           var output = window.document.getElementById('link')
+//           output.textContent = 'I was clicked'
+//         }
+//         link.addEventListener('click', listener)
+<!--       </script> -->
   </body>
 </html>
