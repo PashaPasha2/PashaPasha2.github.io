@@ -63,7 +63,7 @@
 <!--       </script> -->
       <script>
         var allForms = window.document.getElementsByTagName('form')
-        var from = allForms[0]
+        var formElement = allForms[0]
         var listener = function (event) {
           event.preventDefault()
           var nameInput = document.getElementById('input1')
@@ -76,7 +76,7 @@
           }
         }
         
-        form.addEventListener('submit', listener);
+        formElement.addEventListener('submit', listener);
         
       </script>
   </body>
