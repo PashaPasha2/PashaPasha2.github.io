@@ -78,24 +78,24 @@
 //            }
 //          }
 
-//              var btn = window.document.getElementById('button');
-//              var listener = function (event) {
-//                  event.preventDefault();
-//                  ga('send', 'event', 'sendEvent', 'sendEvent action');
-//                  //window.location.href="/thank_you.html?";
-//              }
-//                  btn.addEventListener('click', listener)
+             var btn = window.document.getElementById('button');
+              var listener = function (event) {
+                 event.preventDefault();
+                  ga('send', 'event', 'sendEvent', 'sendEvent action');
+                 //window.location.href="/thank_you.html?";
+              }
+                  btn.addEventListener('click', listener)
             
         
                 var link = window.document.getElementById('link')
-                var listener = function (event) {
+                var listener2 = function (event) {
                 event.preventDefault()
                   var output = window.document.getElementById('link')
                   output.textContent = 'I was clicked'
-                //ga('send', 'event', 'Link', 'Link action');
-                //window.location.href="/thank_you.html?";
+                ga('send', 'event', 'Link', 'Link action');
+                window.location.href="/thank_you.html?";
                 }
-                btn.addEventListener('click', listener)
+                btn.addEventListener('click', listener2)
          
       </script>
   </body>
